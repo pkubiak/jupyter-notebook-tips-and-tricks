@@ -1,0 +1,6 @@
+matplotlib
+ipynb
+ipywidgets
+numpy
+RISE
+tqdm

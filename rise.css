@@ -1,0 +1,174 @@
+:root {
+    --blue-faint: #4b8bbe;
+    --blue: #306998;
+    --yellow-faint: #ffe873;
+    --yellow: #ffd43b;
+    --gray: #646464;
+
+    --font-size: 11pt;
+    --vspace: 8vmin;
+    --hspace: 20vmin;
+  }
+
+  
+.rise-enabled #notebook-container {
+    background: #fffe;
+    box-shadow: 0 0 10px 2px #0005;
+    /* border-radius: 6px;; */
+    width: calc(100% - 2 * var(--hspace)) !important;
+    height: calc(100% - 2 * var(--vspace)) !important;
+    overflow: hidden;
+    padding: 0;
+    /*left: var(--hspace) !important;
+    top: var(--vspace) !importan;*/
+}
+
+.reveal .slides > section.stack {
+    border: 3vmin solid transparent;
+    overflow: hidden;
+}
+
+
+.reveal .slide-number  {
+    font-size: var(--font-size);
+    right: var(--hspace) !important;
+    bottom: var(--vspace) !important;
+    padding: 0.5em;
+}
+
+.rise-enabled #notebook.reveal {
+    /*background: repeating-linear-gradient(135deg, var(--blue-faint) 0%, var(--blue-faint) 4.9%, var(--yellow) 5%, var(--yellow) 9.9%, var(--blue-faint) 10%);*/
+    background: linear-gradient(0deg, #779ee7 0%, #4fc1cc 100%);
+    font-size: var(--font-size);
+}
+
+#exit_b, #help_b, .reveal .controls {
+    display: none !important;
+}
+
+#rise-header, #rise-footer {
+    left: var(--hspace) !important;
+    z-index:100;
+    padding: 0.5em 0.75em ;
+    color: #000;
+    opacity: 0.5;
+}
+
+#rise-header {
+    top: var(--vspace) !important;
+}
+
+#rise-footer{
+    bottom: var(--vspace) !important;
+}
+
+.github::before {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin-right: 0.5em;
+    background: url(https://github.githubassets.com/favicons/favicon.svg) 0% 0% / contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.rise-enabled .reveal .progress span {
+    background: red;
+}
+
+.rise-enabled .prompt {
+    /* width: 0ex !important;
+    min-width: 0 !important;
+    visibility: hidden; */
+    display:none
+}
+
+.rise-enabled div.cell.selected:before, .rise-enabled div.cell.selected.jupyter-soft-selected:before {
+    width: 0.3em;
+}
+
+.rise-enabled div.code_cell {
+    padding: 0.1em;
+    padding-left: 0.4em;
+    margin: 0 2em;
+    width: auto;
+}
+
+.rise-enabled .text_cell.rendered {
+    border: 0;
+}
+
+.rise-enabled .text_cell.rendered h1 {
+    /* font-size: 2.5em; */
+}
+
+.rise-enabled .text_cell.rendered h2, .rise-enabled .text_cell.rendered h3, .rise-enabled .text_cell.rendered h4 {
+    margin-top: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+.rise-enabled .text_cell.rendered::before {
+    display:none;
+}
+
+.rise-enabled div.text_cell_render {
+    padding: 0 0.5em;
+}
+
+.rise-enabled .rendered_html blockquote {
+    color: #0006;
+    margin-right: 0 !important;
+    width: auto;
+    padding-left: 0.5em;
+}
+
+.rise-enabled blockquote small sup {
+    padding-left: 0.2em;
+    top: 0.2em;
+}
+
+.rise-enabled blockquote small {
+    float:right;
+    padding: 0.5em;
+}
+
+.reveal .backgrounds {
+    display:none;
+}
+
+#rise-backimage {
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+    max-height: 3em;
+    width:auto !important;
+    height: auto !important;
+}
+
+section[id^="slide-"] {
+    top: 50% !important;
+    transform:translateY(-50%);
+}
+
+.reveal div.output_subarea {
+    max-width: 100%;
+}
+
+#slide-0-0 {
+    font-size: 26pt;
+}
+
+.reveal .rendered_html * + ul, .reveal .rendered_html * + ol {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.rendered_html ul:not(.list-inline), .rendered_html ol:not(.list-inline) {
+    padding-left: 1em;
+}
+
+.rise-enabled .reveal pre {
+    margin-left: 0;
+}
