@@ -1,5 +1,12 @@
 # jupyter-notebook-tips-and-trickss
 
+Inspiring Tips and Tricks for every Jupyter Notebooks user.
+
+![screenshot](screenshot.png)
+
+- [PDF slides](Jupyter.Tips.And.Tricks.pdf)
+- [Jupyter Notebook](Jupyter.Tips.And.Tricks.ipynb)
+
 
 ## Installation
 
